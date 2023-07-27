@@ -14,6 +14,7 @@ bt.addEventListener('click' , ()=>{
     const li =  document.createElement('li');
     li.addEventListener('click',()=>{
         li.remove();
+        localStorage.removeItem(li.innerText);
     })
     li.innerText = tdval;
     lst.append(li);
